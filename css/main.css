@@ -190,6 +190,7 @@ section:nth-of-type(even) {
     padding: 1rem;
     transition: 500ms;
     font-size: 1.5rem;
+    color: black;
 }
 
 .aboutPageContent button:focus {
