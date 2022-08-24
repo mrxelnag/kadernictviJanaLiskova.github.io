@@ -28,11 +28,11 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-links">
-        <li><a class="nav-link active" href="#heroPage">Domů</a></li>
-        <li><a class="nav-link" href="#about">O Nás</a></li>
-        <li><a class="nav-link" href="#openingHours">Otevírací Doba</a></li>
-        <li><a class="nav-link" href="#">Služby</a></li>
-        <li><a class="nav-link" href="#">Kontakt</a></li>
+        <li><a class="nav-link navHash active" href="#heroPage">Domů</a></li>
+        <li><a class="nav-link navHash" href="#about">O Nás</a></li>
+        <li><a class="nav-link navHash" href="#openingHours">Otevírací Doba</a></li>
+        <li><a class="nav-link navHash" href="#">Služby</a></li>
+        <li><a class="nav-link navHash" href="#">Kontakt</a></li>
       </ul>
     </nav>
   </header>
@@ -87,6 +87,31 @@
   </section>
   <script type="text/javascript" src="js/navigation.js"></script>
   <script type="text/javascript" src="js/animace.js"></script>
+  <!--Close navbar on small devices when clicking somewhere else / on navlink-->
+  <script>
+ 
+  </script>
+  <!--Remove Hast from the link-->
+  <script>
+    // when the DOM is ready
+    $(document).ready(function () {
+      // get the anchor link buttons
+      const menuBtn = $('.navHash');
+      // when each button is clicked
+      menuBtn.click(() => {
+
+        setTimeout(() => {
+
+          removeHash();
+        }, 1);
+      });
+
+      function removeHash() {
+        history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location
+          .search);
+      }
+    });
+  </script>
 </body>
 
 </html>
