@@ -18,6 +18,9 @@
 }
 
 /*=====Defaults=====*/
+body{
+    overflow-x: hidden;
+}
 h1 {
     font-size: min(6rem, 15vw);
 }
