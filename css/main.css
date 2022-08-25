@@ -3,6 +3,7 @@
 :root {
     --brown-clr: #B0742E;
     --brown-clr-o30: rgba(176, 115, 46, 0.3);
+    --brown-clr-forSVG: invert(45%) sepia(69%) saturate(459%) hue-rotate(352deg) brightness(93%) contrast(89%);
     font-size: 12px;
 }
 
@@ -30,7 +31,7 @@ h3 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 /*=====NAVIGATIONS=====*/
@@ -180,7 +181,7 @@ section:nth-of-type(even) {
 }
 
 .aboutPageContent .title img {
-    filter: invert(45%) sepia(69%) saturate(459%) hue-rotate(352deg) brightness(93%) contrast(89%);
+    filter: var(----brown-clr-forSVG);
     opacity: 50%;
 }
 
@@ -213,12 +214,14 @@ section:nth-of-type(even) {
 .hoursPageText {
     text-align: end;
     text-transform: uppercase;
-
+}
+.hoursPageText h3{
+    font-size: 3.2rem;
 }
 
 .separator img {
     rotate: 90deg;
-    filter: invert(45%) sepia(69%) saturate(459%) hue-rotate(352deg) brightness(93%) contrast(89%);
+    filter: var(--brown-clr-forSVG);
     opacity: 50%;
     height: 20px;
 }
@@ -227,7 +230,7 @@ section:nth-of-type(even) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: min(40rem,80vw);
+    width: min(40rem, 80vw);
     font-size: 1.2rem;
     gap: 0.6rem;
 }
@@ -237,28 +240,107 @@ section:nth-of-type(even) {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 2px solid var(--brown-clr-o30);
+    font-size: 18px;
 }
 
 .tableItem .time {
     opacity: 80%;
 }
 
+/*====PERKS====*/
+.perksPageContent{
+    display: flex;
+    justify-content: center;
+}
+.gridWrapper {
+    max-width: 1250px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 2em;
+    gap: min(4vw, 200px);
+}
+.perkName{
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.perk, .perkName{
+    text-align: center;
+}
+.perkIcon{
+    display: flex;
+    justify-content: center;
+}
+.perkIcon .icon{
+    width: 5rem;
+    height: 5rem;
+    padding: 2rem;
+    filter: var(--brown-clr-forSVG); 
+
+}
+
+/*====Services====*/
+.servicesPageContent{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.servicesGridCol{
+    border: 1rem double white ;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+   
+}
+
+
+.serviceName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicesGridCol .underline{
+    width: 2vw;
+    height: 5px;
+    border-bottom: 2px solid var(--brown-clr-o30);
+}
+.service{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-bottom: 0.7em;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.2);
+}
 /*======Utility======*/
 .active {
     color: var(--brown-clr);
 }
-
 .title {
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding-bottom: 2em;
 }
-
 .title img {
-    filter: invert(45%) sepia(69%) saturate(459%) hue-rotate(352deg) brightness(93%) contrast(89%);
+    filter: var(--brown-clr-forSVG);
     opacity: 50%;
 }
-
+.gridWrapper {
+    width: 1250px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 2em;
+    gap: min(4vw, 200px);
+    grid-column: 1/3;
+}
 /*====Stying for small screens====*/
 @media screen and (max-width: 800px) {
 
@@ -336,22 +418,31 @@ section:nth-of-type(even) {
     }
 
 }
-
 /*Styling Opening Section*/
-@media screen and (max-width: 650px) {
-    .openingHoursPageContent{
+@media screen and (max-width: 750px) {
+    .openingHoursPageContent {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
     }
+
     .separator img {
         rotate: 0deg;
         height: 20px;
     }
-    .hoursPageText{
+
+    .hoursPageText {
         text-align: center;
     }
-    
+
+}
+@media screen and (max-width: 600px) {
+    .gridWrapper{
+        width: 100vw;
+    } 
+    .perk{
+        grid-column: 1;
+    }
 }
