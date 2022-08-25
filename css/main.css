@@ -319,6 +319,11 @@ section:nth-of-type(even) {
     margin-bottom: 0.7em;
     border-bottom: 2px dotted rgba(255, 255, 255, 0.2);
 }
+.servicesIcon .icon{
+    width: 3em;
+    height: 3em;
+    padding-bottom: 10px;
+}
 /*======Utility======*/
 .active {
     color: var(--brown-clr);
@@ -343,6 +348,10 @@ section:nth-of-type(even) {
     margin-inline: 2em;
     gap: min(4vw, 200px);
     grid-column: 1/3;
+}
+.icon{
+
+    filter: var(--brown-clr-forSVG); 
 }
 /*====Stying for small screens====*/
 @media screen and (max-width: 800px) {
