@@ -445,4 +445,7 @@ section:nth-of-type(even) {
     .perk{
         grid-column: 1;
     }
+    .servicesGridCol{
+        grid-column: 1;
+    }
 }
