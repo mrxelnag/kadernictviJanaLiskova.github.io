@@ -12,3 +12,10 @@ hamburger.addEventListener('click', ()=>{
     //Hamburger Animation
     hamburger.classList.toggle("toggle");
 });
+navLinks.addEventListener('click', ()=>{
+    //Animate Links
+     navLinks.classList.toggle("open");
+     links.forEach(link => {
+         link.classList.toggle("fade");
+     });
+ });
