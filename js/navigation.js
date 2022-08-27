@@ -18,4 +18,6 @@ navLinks.addEventListener('click', ()=>{
      links.forEach(link => {
          link.classList.toggle("fade");
      });
+     //Hamburger Animation
+    hamburger.classList.toggle("toggle");
  });
