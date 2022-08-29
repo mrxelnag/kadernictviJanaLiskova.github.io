@@ -39,6 +39,9 @@ h2 {
 h3 {
     font-size: 2rem;
 }
+h4{
+    font-size: 1.6rem;
+}
 
 p {
     font-size: 1.6rem;
@@ -73,7 +76,14 @@ section:nth-of-type(even) {
     flex-direction: column;
     padding-bottom: 1.5rem;
 }
+a:link, a:visited{
+    text-decoration: none;
+    color: black;
 
+}
+a:hover{
+    color: var(--brown-clr);
+}
 .title img {
     filter: var(--brown-clr-forSVG);
     opacity: 50%;
@@ -291,7 +301,7 @@ nav .logo img {
 .tableItem {
     justify-content: space-between;
     border-bottom: 2px solid var(--brown-clr-o30);
-    font-size: 18px;
+    font-size: 1.4rem;
 }
 
 .tableItem .time {
@@ -408,6 +418,22 @@ nav .logo img {
 .contactSectionContent .gridWrapper{
     max-width: 900px;
     gap: 2.5em;
+}
+.contentLocationMaps{
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+.contactLocation{
+    padding-bottom: 1em;
+}
+.contactLocation .icon{
+    width: 4rem;
+    height: 4rem;
+}
+.contactPersonDetails{
+}
+.contactPersonContacs{
+    gap: min(1vw, 0.5em);
 }
 /*====Stying for small screens====*/
 @media screen and (max-width: 800px) {
@@ -532,7 +558,22 @@ nav .logo img {
     .perk {
         grid-column: 1;
     }
-
-
+}
+@media screen and (max-width: 330px){
+ .tableItem{
+    font-size: 1.2rem;
+ }   
+ .contactPerson{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+ }
+ .contactSectionContent .gridWrapper{
+    gap: 1.2em;
+ }
+ .contactPersonImage{
+    width: 30vw;
+    height: 30vw;
+}
 
 }
