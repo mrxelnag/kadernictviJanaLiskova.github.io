@@ -566,6 +566,9 @@ nav .logo img {
  .contactPerson{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 0.2em;
  }
  .contactSectionContent .gridWrapper{
@@ -576,4 +579,14 @@ nav .logo img {
     height: 30vw;
 }
 
+.contactPersonDetails h3{
+    font-size: min(1.4rem, 20vw);
+}
+.contactPersonContacts .icon{
+    width: 5vw;
+    height: 5vw;
+}
+.contactPerconContactsPhone{
+    font-size: min(1rem, 5vw);
+}
 }
