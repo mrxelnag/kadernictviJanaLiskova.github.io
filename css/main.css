@@ -18,8 +18,9 @@
 }
 
 /*=====Defaults=====*/
-body {
-    overflow-x: hidden;
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden !important;
 }
 
 footer {
@@ -515,6 +516,10 @@ nav .logo img {
 
 /*Styling Opening Section*/
 @media screen and (max-width: 750px) {
+    html, body {
+        max-width: 100vw;
+        overflow-x: hidden !important;
+    }
     .openingHoursPageContent {
         display: flex;
         flex-direction: column;
