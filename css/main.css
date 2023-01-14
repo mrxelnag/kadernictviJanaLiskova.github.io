@@ -1,3 +1,5 @@
+@import "animace.css";
+
 :root {
     --brown-clr: #B0742E;
     --brown-clr-o30: rgba(176, 115, 46, 0.3);
