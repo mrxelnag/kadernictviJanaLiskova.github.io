@@ -1,0 +1,77 @@
+div {
+    /* animation-name: translateY;
+    animation-duration: 10s; */
+}
+
+section{
+    animation-name: opacityChange;
+    animation-duration: 10s;
+}
+
+@keyframes translateY {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    25% {
+        transform: translateY(10%);
+    }
+
+    50% {
+        transform: translateY(-10%);
+    }
+
+    75% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
+}
+
+@keyframes colorChange {
+    0% {
+        color: black ;
+    }
+
+    25% {
+        color: white;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: blue;
+    }
+
+    100% {
+        color: black;
+    }
+
+}
+@keyframes opacityChange {
+    0% {
+        opacity: 0% ;
+    }
+
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity:50%
+    }
+
+    75% {
+        opacity: 75%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+}

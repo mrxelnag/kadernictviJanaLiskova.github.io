@@ -1,5 +1,4 @@
-@import "animace.css";
-
+/* @import url(animaceNew.css); */
 :root {
     --brown-clr: #B0742E;
     --brown-clr-o30: rgba(176, 115, 46, 0.3);
@@ -217,7 +216,7 @@ nav .logo img {
 /*=====HERO PAGE=====*/
 #heroPage {
     padding: 0;
-    height: 100vh;
+    height: 70vh;
     background-color: rgba(0, 0, 0, 0.411);
     background-image: url(../img/nathon-oski-EW_rqoSdDes-unsplash.jpg);
     background-position: bottom;
