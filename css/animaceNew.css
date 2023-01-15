@@ -4,7 +4,7 @@ div {
 }
 
 section{
-    animation-name: opacityChange;
+    animation-name: translateY;
     animation-duration: 10s;
 }
 
@@ -28,7 +28,6 @@ section{
     100% {
         transform: translateY(0%);
     }
-
 }
 
 @keyframes colorChange {
